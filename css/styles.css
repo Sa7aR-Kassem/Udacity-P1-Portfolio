@@ -1,0 +1,135 @@
+/* Start General Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    margin: 0;
+    color: #2d3c49;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.fluid-img {
+    display: block;
+    max-width: 100%;
+}
+
+.col-3 {
+    width: 100%;
+}
+
+/* End General Styles */
+
+/* Start Header Styles */
+.personal-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #7d97ad;
+}
+
+.personal-info .logo {
+    width: 100px;
+}
+
+.personal-info .info {
+    width: calc(100% - 100px);
+    text-align: right;
+}
+
+.personal-info h1,
+.personal-info p {
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+/* End Header Styles */
+
+/* Start Projects Styles */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+h2 {
+    color: #7d97ad;
+    text-transform: capitalize;
+    font-weight: 100;
+    font-size: 2rem
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.project img {
+    width: 30%;
+    margin-right: .5rem;
+}
+
+.project .info {
+    width: calc(70% - .5rem);
+    text-align: center;
+}
+
+.project h3 {
+    text-transform: uppercase;
+    font-weight: 100;
+    margin: 0;
+    font-size: 1.5rem
+}
+
+.project a {
+    text-decoration: none;
+    color: #2d3c49;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* End Projects Styles */
+
+/* Start Media Queries Styles */
+@media only screen and (min-width: 769px) {
+    p,
+    a {
+        font-size: 1rem;
+    }
+
+    .projects {
+        margin: 0 -15px;
+    }
+
+    .col-3 {
+        width: calc(100% / 3);
+        padding: 0 15px;
+    }
+
+    .project img,
+    .project .info {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .project h3 {
+        margin: 1rem 0 0.5rem;
+    }
+}
+
+/* End Media Queries Styles */
